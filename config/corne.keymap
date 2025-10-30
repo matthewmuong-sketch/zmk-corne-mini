@@ -59,104 +59,7 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        escape {
-            bindings = <&kp ESCAPE>;
-            key-positions = <13 29>;
-        };
-
-        delete {
-            bindings = <&kp DELETE>;
-            key-positions = <15 21>;
-        };
-
-        perc {
-            bindings = <&kp PERCENT>;
-            key-positions = <5 17>;
-        };
-
-        equal {
-            bindings = <&kp EQUAL>;
-            key-positions = <28 16>;
-        };
-
-        dollar {
-            bindings = <&kp DOLLAR>;
-            key-positions = <4 16>;
-        };
-
-        pound {
-            bindings = <&kp POUND>;
-            key-positions = <3 15>;
-        };
-
-        at {
-            bindings = <&kp AT>;
-            key-positions = <2 14>;
-        };
-
-        backslash {
-            bindings = <&kp BACKSLASH>;
-            key-positions = <26 14>;
-        };
-
-        copy {
-            bindings = <&kp K_COPY>;
-            key-positions = <28 27>;
-        };
-
-        paste {
-            bindings = <&kp K_PASTE>;
-            key-positions = <26 27>;
-        };
-
-        star {
-            bindings = <&kp STAR>;
-            key-positions = <8 20>;
-        };
-
-        slash {
-            bindings = <&kp SLASH>;
-            key-positions = <32 20>;
-        };
-
-        plus {
-            bindings = <&kp PLUS>;
-            key-positions = <7 19>;
-        };
-
-        minus {
-            bindings = <&kp KP_MINUS>;
-            key-positions = <31 19>;
-        };
-
-        underscore {
-            bindings = <&kp UNDER>;
-            key-positions = <30 18>;
-        };
-
-        leftbrack {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <31 32>;
-        };
-
-        rightbrack {
-            bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <33 32>;
-        };
-
-        para-less {
-            bindings = <&paraless>;
-            key-positions = <20 19>;
-        };
-
-        para-great {
-            bindings = <&paragreat>;
-            key-positions = <20 21>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     //
 
@@ -164,7 +67,8 @@
         compatible = "zmk,keymap";
 
         DEF {
-                display-name = "Base";
+            display-name = "Base";
+
             // -----------------------------------------------------------------------------------------
             // |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |
             // |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |
@@ -172,15 +76,16 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&kp TAB    &kp Q       &kp W        &kp E       &kp R        &kp T        &kp Y    &kp U        &kp I          &kp O        &kp P          &kp BACKSPACE
-&kp LSHFT  &hm LGUI A  &hm LSHFT S  &hm LALT D  &hm LCTRL F  &kp G        &kp H    &hm RCTRL J  &hm RALT K     &hm RSHFT L  &hm RGUI SEMI  &kp SQT
-&kp LCTRL  &kp Z       &kp X        &kp C       &kp V        &kp B        &kp N    &kp M        &kp COMMA      &kp DOT      &kp FSLH       &kp RSHFT
-                                    &kp LGUI    &mo 1        &kp SPACE    &kp RET  &lt 2 TAB    &kp BACKSPACE
+&none  &kp Q  &kp W        &kp E       &kp R        &kp T        &kp Y    &kp U        &kp I          &kp O        &kp P          &none
+&none  &kp A  &hm LSHFT S  &hm LALT D  &hm LCTRL F  &kp G        &kp H    &hm RCTRL J  &hm RALT K     &hm RSHFT L  &hm RGUI SEMI  &none
+&none  &kp Z  &kp X        &kp C       &kp V        &kp B        &kp N    &kp M        &kp COMMA      &kp DOT      &kp FSLH       &none
+                           &kp LGUI    &mo 1        &kp SPACE    &kp RET  &lt 2 TAB    &kp BACKSPACE
             >;
         };
 
         NAV {
-                display-name = "Nav";
+            display-name = "Nav";
+
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
@@ -196,7 +101,8 @@
         };
 
         SYM {
-                display-name = "Sym";
+            display-name = "Sym";
+
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -212,32 +118,25 @@
         };
 
         ADJ {
-                display-name = "System";
+            display-name = "System";
             bindings = <
 &trans  &kp F1        &kp F2         &kp F3        &kp F4      &kp F5            &kp F6  &kp F7  &kp F8  &kp F9  &kp F10      &trans
-&trans  &hm LGUI F11  &hm LSHFT F12  &trans        &trans      &studio_unlock            &trans  &trans  &trans  &trans  &trans       &trans
+&trans  &hm LGUI F11  &hm LSHFT F12  &trans        &trans      &studio_unlock    &trans  &trans  &trans  &trans  &trans       &trans
 &trans  &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2  &bt BT_CLR  &bt BT_CLR_ALL    &trans  &trans  &trans  &trans  &bootloader  &trans
                                      &trans        &trans      &trans            &trans  &trans  &trans
             >;
         };
 
         EXTRA {
-                display-name = "Mouse";
+            display-name = "Mouse";
             bindings = <
-&trans  &trans       &trans         &mmv MOVE_UP       &trans      &msc SCRL_UP    &trans  &trans  &trans  &trans  &trans      &trans
-&trans  &trans       &mmv MOVE_LEFT &mmv MOVE_DOWN     &mmv MOVE_RIGHT   &msc SCRL_DOWN            &trans  &trans  &trans  &trans  &trans       &trans
-&trans  &trans       &trans   &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                     &trans        &trans      &trans            &trans  &trans  &trans
+&trans  &trans  &trans          &mmv MOVE_UP    &trans           &msc SCRL_UP      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans          &trans          &trans           &trans            &trans  &trans  &trans  &trans  &trans  &trans
+                                &trans          &trans           &trans            &trans  &trans  &trans
             >;
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        l3 {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
