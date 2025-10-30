@@ -145,5 +145,10 @@
             if-layers = <1 2>;
             then-layer = <3>;
         };
+
+        alt {
+            if-layers = <2 1>;
+            then-layer = <3>;
+        };
     };
 };
