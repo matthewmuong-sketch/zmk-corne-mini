@@ -1,7 +1,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/pointing.h>
 
 #define DEF 0
 #define NAV 1
@@ -83,7 +82,7 @@
             >;
         };
 
-        Sym {
+        Num {
             display-name = "Numbers and Symbols";
 
             // -----------------------------------------------------------------------------------------
@@ -117,23 +116,22 @@
             >;
         };
 
-        ADJ {
+        Sys {
             display-name = "System";
             bindings = <
-&trans  &kp F1        &kp F2        &kp F3        &kp F4          &kp F5            &kp F6  &kp F7  &kp F8  &kp F9  &kp F10      &trans
-&trans  &kp F11       &kp F12       &bt BT_CLR    &bt BT_CLR_ALL  &studio_unlock    &trans  &trans  &trans  &trans  &trans       &trans
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4      &trans  &trans  &trans  &trans  &bootloader  &trans
-                                    &trans        &trans          &trans            &trans  &trans  &trans
+&trans  &kp F1        &kp F2        &kp F3        &kp F4          &kp F5            &kp F6                &kp F7             &kp F8            &kp F9           &kp F10      &trans
+&trans  &kp F11       &kp F12       &bt BT_CLR    &bt BT_CLR_ALL  &studio_unlock    &kp C_BRIGHTNESS_INC  &kp K_PREVIOUS     &kp K_PLAY_PAUSE  &kp K_NEXT       &trans       &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4      &kp C_BRIGHTNESS_DEC  &kp C_VOLUME_DOWN  &kp K_MUTE        &kp C_VOLUME_UP  &bootloader  &trans
+                                    &trans        &trans          &trans            &trans                &trans             &trans
             >;
         };
 
-        EXTRA {
-            display-name = "Mouse";
+        layer_4 {
             bindings = <
-&trans  &trans  &trans          &mmv MOVE_UP    &trans           &msc SCRL_UP      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans          &trans          &trans           &trans            &trans  &trans  &trans  &trans  &trans  &trans
-                                &trans          &trans           &trans            &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
