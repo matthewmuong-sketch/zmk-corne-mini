@@ -76,10 +76,10 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&none  &kp SQT        &kp COMMA  &kp PERIOD  &kp P      &kp Y        &kp F          &kp G        &kp C       &kp R  &kp L  &none
-&none  &kp A          &kp O      &kp E       &kp U      &kp I        &kp D          &kp H        &kp T       &kp N  &kp S  &none
-&none  &kp SEMICOLON  &kp Q      &kp J       &kp K      &kp X        &kp B          &kp M        &kp W       &kp V  &kp Z  &none
-                                 &kp LGUI    &lt 1 TAB  &kp SPACE    &kp BACKSPACE  &lt 2 ENTER  &kp DELETE
+&none  &kp SQT        &kp COMMA  &kp PERIOD      &kp P      &kp Y        &kp F        &kp G          &kp C       &kp R  &kp L  &none
+&none  &kp A          &kp O      &kp E           &kp U      &kp I        &kp D        &kp H          &kp T       &kp N  &kp S  &none
+&none  &kp SEMICOLON  &kp Q      &kp J           &kp K      &kp X        &kp B        &kp M          &kp W       &kp V  &kp Z  &none
+                                 &sk LEFT_SHIFT  &kp SPACE  &lt 1 TAB    &lt 2 ENTER  &kp BACKSPACE  &kp DELETE
             >;
         };
 
@@ -93,10 +93,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp EXCL       &kp AT        &kp HASH              &kp LEFT_BRACKET       &kp RIGHT_BRACKET    &kp ASTERISK     &kp N7        &kp N8        &kp N9        &kp MINUS  &trans
-&trans  &kp DOLLAR     &kp PERCENT   &kp CARET             &kp NON_US_BACKSLASH   &kp GRAVE            &kp SLASH        &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS   &trans
-&trans  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE            &kp N0           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL  &trans
-                                     &kp LGUI              &trans                 &kp SPACE            &sk RIGHT_SHIFT  &caps_word    &caps
+&trans  &kp DOLLAR       &kp BACKSLASH         &kp SLASH              &kp ASTERISK  &kp PLUS     &kp ASTERISK  &kp N7         &kp N8        &kp N9        &kp PLUS   &trans
+&trans  &kp EXCLAMATION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION  &kp MINUS    &kp SLASH     &kp NUMBER_4   &kp N5        &kp NUMBER_6  &kp MINUS  &trans
+&trans  &kp AMPERSAND    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT   &kp TILDE    &kp N0        &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL  &trans
+                                               &sk LEFT_SHIFT         &trans        &trans       &trans        &kp BACKSPACE  &caps
             >;
         };
 
@@ -110,10 +110,10 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&trans  &kp N1       &kp N2        &kp N3        &kp N4           &kp N5           &kp N6   &kp N7        &kp N8       &kp N9        &kp N0            &trans
-&trans  &hm LGUI N0  &hm LSHFT N4  &kp UP_ARROW  &hm LCTRL DEL    &kp PAGE_UP      &kp N0   &hm RCTRL N4  &hm RALT N5  &hm RSHFT N6  &hm RGUI PAGE_UP  &trans
-&trans  &trans       &kp LEFT      &kp DOWN      &kp RIGHT_ARROW  &kp PAGE_DOWN    &trans   &kp N1        &kp N2       &kp N3        &kp PAGE_DOWN     &trans
-                                   &kp LGUI      &trans           &kp SPACE        &kp RET  &trans        &trans
+&trans  &none  &kp PAGE_UP  &kp UP_ARROW  &kp PAGE_DOWN  &none        &kp LA(TAB)         &kp LG(LS(LEFT_ARROW))  &kp LG(D)      &kp LG(LS(RIGHT))  &kp LS(LG(S))    &trans
+&trans  &none  &kp LEFT     &kp DOWN      &kp RIGHT      &none        &kp LC(LS(TAB))     &kp RCTRL               &kp RALT       &kp RIGHT_GUI      &kp RIGHT_SHIFT  &trans
+&trans  &none  &kp HOME     &kp ESCAPE    &kp END        &none        &kp LC(LA(DELETE))  &sk RIGHT_CONTROL       &sk RIGHT_ALT  &sk RIGHT_GUI      &sk RIGHT_SHIFT  &trans
+                            &trans        &trans         &kp SPACE    &kp RET             &trans                  &trans
             >;
         };
 
