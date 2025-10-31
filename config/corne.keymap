@@ -58,7 +58,24 @@
         };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        Control {
+            bindings = <&kp LEFT_CONTROL>;
+            key-positions = <15 16>;
+        };
+
+        Alt {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <14 15>;
+        };
+
+        Window {
+            bindings = <&kp LEFT_GUI>;
+            key-positions = <12 13>;
+        };
+    };
 
     //
 
