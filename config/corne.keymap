@@ -75,10 +75,10 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&none  &kp SQT        &kp COMMA  &kp PERIOD      &kp P      &kp Y        &kp F        &kp G          &kp C       &kp R  &kp L  &none
-&none  &kp A          &kp O      &kp E           &kp U      &kp I        &kp D        &kp H          &kp T       &kp N  &kp S  &none
-&none  &kp SEMICOLON  &kp Q      &kp J           &kp K      &kp X        &kp B        &kp M          &kp W       &kp V  &kp Z  &none
-                                 &sk LEFT_SHIFT  &kp SPACE  &lt 1 TAB    &lt 2 ENTER  &kp BACKSPACE  &kp DELETE
+&none  &kp SQT        &kp COMMA  &kp PERIOD      &kp P      &kp Y        &kp F        &kp G          &kp C            &kp R  &kp L  &none
+&none  &kp A          &kp O      &kp E           &kp U      &kp I        &kp D        &kp H          &kp T            &kp N  &kp S  &none
+&none  &kp SEMICOLON  &kp Q      &kp J           &kp K      &kp X        &kp B        &kp M          &kp W            &kp V  &kp Z  &none
+                                 &kp LEFT_SHIFT  &kp SPACE  &lt 1 TAB    &lt 2 ENTER  &kp BACKSPACE  &kp RIGHT_SHIFT
             >;
         };
 
@@ -95,7 +95,7 @@
 &trans  &kp DOLLAR       &kp BACKSLASH         &kp SLASH              &kp ASTERISK  &kp PLUS     &kp ASTERISK  &kp N7        &kp N8        &kp N9        &kp PLUS   &trans
 &trans  &kp EXCLAMATION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION  &kp MINUS    &kp SLASH     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS  &trans
 &trans  &kp AMPERSAND    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT   &kp TILDE    &kp N0        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL  &trans
-                                               &trans                 &trans        &trans       &trans        &trans        &trans
+                                               &trans                 &trans        &trans       &trans        &trans        &kp DEL
             >;
         };
 
@@ -109,10 +109,10 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&trans  &kp K_UNDO  &kp PAGE_UP  &kp UP_ARROW  &kp PAGE_DOWN   &kp K_COPY     &kp LA(TAB)         &kp LG(LS(LEFT_ARROW))  &kp LG(D)      &kp LG(LS(RIGHT))  &kp LS(LG(S))    &trans
-&trans  &kp INSERT  &kp LEFT     &kp DOWN      &kp RIGHT       &kp K_PASTE    &kp LC(LS(TAB))     &kp RCTRL               &kp RALT       &kp RIGHT_GUI      &kp RIGHT_SHIFT  &trans
-&trans  &kp K_REDO  &kp HOME     &kp ESCAPE    &kp END         &kp K_CUT      &kp LC(LA(DELETE))  &sk RIGHT_CONTROL       &sk RIGHT_ALT  &sk RIGHT_GUI      &sk RIGHT_SHIFT  &trans
-                                 &caps         &sk LEFT_SHIFT  &trans         &trans              &trans                  &trans
+&trans  &kp K_UNDO  &kp PAGE_UP  &kp UP_ARROW  &kp PAGE_DOWN  &kp K_COPY     &kp LA(TAB)         &kp LG(LC(LEFT_ARROW))  &kp LG(D)      &kp LG(LC(RIGHT))  &kp LS(LG(S))    &trans
+&trans  &kp INSERT  &kp LEFT     &kp DOWN      &kp RIGHT      &kp K_PASTE    &kp LC(LS(ESC))     &kp RCTRL               &kp RALT       &kp RIGHT_GUI      &kp RIGHT_SHIFT  &trans
+&trans  &kp K_REDO  &kp HOME     &kp ESCAPE    &kp END        &kp K_CUT      &kp LC(LA(DELETE))  &sk RIGHT_CONTROL       &sk RIGHT_ALT  &sk RIGHT_GUI      &sk RIGHT_SHIFT  &trans
+                                 &caps         &trans         &trans         &trans              &trans                  &trans
             >;
         };
 
