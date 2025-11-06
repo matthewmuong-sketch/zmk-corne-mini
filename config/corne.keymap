@@ -126,9 +126,9 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&trans  &kp HOME    &kp PAGE_UP  &kp UP_ARROW  &kp PAGE_DOWN  &kp LC(C)    &kp LA(TAB)         &kp LG(LC(LEFT_ARROW))  &kp LG(D)      &kp LG(LC(RIGHT))  &kp LS(LG(S))    &trans
-&trans  &kp ESCAPE  &kp LEFT     &kp DOWN      &kp RIGHT      &kp LC(V)    &kp LC(LS(ESC))     &kp RCTRL               &kp RALT       &kp RIGHT_GUI      &kp RIGHT_SHIFT  &trans
-&trans  &kp END     &kp DEL      &kp LC(Y)     &kp LC(Z)      &kp LC(X)    &kp LC(LA(DELETE))  &sk RIGHT_CONTROL       &sk RIGHT_ALT  &sk RIGHT_GUI      &sk RIGHT_SHIFT  &trans
+&trans  &kp HOME    &kp DEL      &kp LC(Y)     &kp LC(Z)      &kp LC(C)    &kp LA(TAB)         &kp LG(LC(LEFT_ARROW))  &kp LG(D)      &kp LG(LC(RIGHT))  &kp LS(LG(S))    &trans
+&trans  &kp ESCAPE  &kp LEFT     &kp UP_ARROW  &kp RIGHT      &kp LC(V)    &kp LC(LS(ESC))     &kp RCTRL               &kp RALT       &kp RIGHT_GUI      &kp RIGHT_SHIFT  &trans
+&trans  &kp END     &kp PAGE_UP  &kp DOWN      &kp PAGE_DOWN  &kp LC(X)    &kp LC(LA(DELETE))  &sk RIGHT_CONTROL       &sk RIGHT_ALT  &sk RIGHT_GUI      &sk RIGHT_SHIFT  &trans
                                  &caps         &trans         &trans       &trans              &trans                  &trans
             >;
         };
