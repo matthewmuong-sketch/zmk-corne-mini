@@ -92,10 +92,10 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&none  &kp SQT        &kp COMMA  &kp PERIOD      &kp P      &kp Y        &kp F        &kp G          &kp C            &kp R  &kp L  &none
-&none  &kp A          &kp O      &kp E           &kp U      &kp I        &kp D        &kp H          &kp T            &kp N  &kp S  &none
-&none  &kp SEMICOLON  &kp Q      &kp J           &kp K      &kp X        &kp B        &kp M          &kp W            &kp V  &kp Z  &none
-                                 &kp LEFT_SHIFT  &kp SPACE  &lt 1 TAB    &lt 2 ENTER  &kp BACKSPACE  &kp RIGHT_SHIFT
+&none  &kp W  &kp L  &kp R           &kp B      &kp Z        &kp SEMICOLON  &kp Q          &kp U            &kp D  &kp J  &none
+&none  &kp S  &kp H  &kp N           &kp T      &kp COMMA    &kp PERIOD     &kp A          &kp E            &kp O  &kp I  &none
+&none  &kp F  &kp M  &kp V           &kp C      &kp SQT      &kp G          &kp P          &kp X            &kp K  &kp Y  &none
+                     &kp LEFT_SHIFT  &kp SPACE  &lt 1 TAB    &lt 2 ENTER    &kp BACKSPACE  &kp RIGHT_SHIFT
             >;
         };
 
